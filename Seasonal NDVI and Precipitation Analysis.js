@@ -1,9 +1,9 @@
 var S2 = ee.ImageCollection("COPERNICUS/S2_SR"),
- AOI = /* color: #0b4a8b */ee.Geometry.Polygon(
-     [[[107.75191616917411, 10.871984336779233],
-       [108.16733670140067, 10.871984336779233],
-       [108.16733670140067, 11.245658420262382],
-       [107.75191616917411, 11.245658420262382]]]),
+    AOI = /* color: #0b4a8b */ee.Geometry.Polygon(
+        [[[107.75191616917411, 10.871984336779233],
+          [108.16733670140067, 10.871984336779233],
+          [108.16733670140067, 11.245658420262382],
+          [107.75191616917411, 11.245658420262382]]]),
     POI = /* color: #98ff00 */ee.Geometry.Point([107.80981626912582, 11.00308253902219]),
     POI2 = /* color: #da892d */ee.Geometry.Point([108.03845192796351, 11.135090619127975]),
     TRMM = ee.ImageCollection("TRMM/3B43V7");
@@ -191,26 +191,8 @@ var visParams2 = {
 };
 Map.addLayer(s2wetRGB,visParams2,'Wet RGB');
 
-//S2 Dry season, composite NIR-SWIR-RED dryCollection 
-var s2dryNSR = dryCollection.select('B8A', 'B11', 'B4').reduce(ee.Reducer.median());
-var visdryNSR = {
-  min: 0, 
-  max: 4000,  
-  gamma: 1.3  
-};
-Map.addLayer(s2dryNSR,visdryNSR,'Dry NSR');
-
-//S2 Wet season, composite NIR-SWIR-RED wetCollection 
-var s2wetNSR = wetCollection.select('B8A', 'B11', 'B4').reduce(ee.Reducer.median());
-var viswetNSR = {
-  min: 0,  
-  max: 4000,  
-  gamma: 1.3  
-};
-Map.addLayer(s2wetNSR,viswetNSR,'Wet NSR');
-
 // Combine wet dataset
-var WetDataset = ee.ImageCollection([s2wetRGB, s2wetNSR, maxwetNDVI]);
+var WetDataset = ee.ImageCollection([s2wetRGB, maxwetNDVI]);
 var clipToAOI = function(image) {
   return image.clip(AOI);
 };
@@ -221,8 +203,6 @@ print(WetDatasetAOI);
 //Bring each image of dataset to 
 var imagen1 = ee.Image(WetDatasetAOI.toList(WetDatasetAOI.size()).get(0));
 var imagen2 = ee.Image(WetDatasetAOI.toList(WetDatasetAOI.size()).get(1));
-var imagen3 = ee.Image(WetDatasetAOI.toList(WetDatasetAOI.size()).get(2));
 
 Map.addLayer(imagen1, visParams2, 's2wetRGB');
-Map.addLayer(imagen2, viswetNSR, 's2wetNSR');
-Map.addLayer(imagen3, ndviwetVis, 'maxwetNDVI');
+Map.addLayer(imagen2, ndviwetVis, 'maxwetNDVI');
