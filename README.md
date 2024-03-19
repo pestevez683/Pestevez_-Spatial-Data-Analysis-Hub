@@ -9,7 +9,8 @@ Generates NDVI time series for specific points of interest.
 Imports TRMM precipitation data and calculates monthly precipitation for the area of interest.
 Generates a precipitation time series.
 Performs NDVI compositions for the dry and wet seasons.
-Visualizes the composited images and time series on an interactive map.
+Create composite RGB and NIR-SWIR-RED images for both dry and wet seasons and visualize them.
+Combine wet dataset images into a single ImageCollection, clip them to the area of interest.
 
 ## Usage
 1. Ensure you have access to Google Earth Engine and are authenticated.
@@ -29,12 +30,7 @@ Pull Requests (PR): If you'd like to contribute code, you can submit a pull requ
 Feedback and Comments:If you have any comments about the script or suggestions on how to improve the contribution process, feel free to share them in the issues.
 
 ## Assets
-[url=https://postimg.cc/Yj1V8tvt][img]https://i.postimg.cc/Yj1V8tvt/NDVI-during-Wet-Season.png[/img][/url]
-
-[url=https://postimg.cc/MvqLFgBV][img]https://i.postimg.cc/MvqLFgBV/NDVI-Time-Series.png[/img][/url]
-
-[url=https://postimg.cc/TKHHhw4J][img]https://i.postimg.cc/TKHHhw4J/Sentinel-2-Composite-NIR-SWIR-RED.png[/img][/url]
-
-[url=https://postimg.cc/NK0zgTp0][img]https://i.postimg.cc/NK0zgTp0/Sentinel-2-with-Cloud-Filtering.png[/img][/url]
-
-[url=https://postimg.cc/LnDWKvk7][img]https://i.postimg.cc/LnDWKvk7/Time-Series-of-Precipitation.png[/img][/url]
+[![Sentinel-2-with-Cloud-Filtering.png](https://i.postimg.cc/bw0c99n1/Sentinel-2-with-Cloud-Filtering.png)](https://postimg.cc/NK0zgTp0)
+[![NDVI-during-Wet-Season.png](https://i.postimg.cc/XNhbjJ3B/NDVI-during-Wet-Season.png)](https://postimg.cc/Yj1V8tvt)
+[![NDVI-Time-Series.png](https://i.postimg.cc/NfHw5cfJ/NDVI-Time-Series.png)](https://postimg.cc/MvqLFgBV)
+[![Time-Series-of-Precipitation.png](https://i.postimg.cc/g2bbhTxY/Time-Series-of-Precipitation.png)](https://postimg.cc/LnDWKvk7)
