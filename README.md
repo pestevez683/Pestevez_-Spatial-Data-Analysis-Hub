@@ -22,8 +22,8 @@ Visualizes the composited images and time series on an interactive map.
 Issues and Suggestions: If you find a bug or have an idea for improvement, you can open an issue on GitHub. Please provide clear details, and if possible, include examples or screenshots.
 
 Pull Requests (PR): If you'd like to contribute code, you can submit a pull request. Here's how:
-Fork the repository.
-Make your changes in a new branch.
-Submit the pull request to the main branch of the repository.
+1. Fork the repository.
+2. Make your changes in a new branch.
+3. Submit the pull request to the main branch of the repository.
 
 Feedback and Comments:If you have any comments about the script or suggestions on how to improve the contribution process, feel free to share them in the issues.
