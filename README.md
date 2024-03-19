@@ -27,3 +27,14 @@ Pull Requests (PR): If you'd like to contribute code, you can submit a pull requ
 3. Submit the pull request to the main branch of the repository.
 
 Feedback and Comments:If you have any comments about the script or suggestions on how to improve the contribution process, feel free to share them in the issues.
+
+## Assets
+[url=https://postimg.cc/Yj1V8tvt][img]https://i.postimg.cc/Yj1V8tvt/NDVI-during-Wet-Season.png[/img][/url]
+
+[url=https://postimg.cc/MvqLFgBV][img]https://i.postimg.cc/MvqLFgBV/NDVI-Time-Series.png[/img][/url]
+
+[url=https://postimg.cc/TKHHhw4J][img]https://i.postimg.cc/TKHHhw4J/Sentinel-2-Composite-NIR-SWIR-RED.png[/img][/url]
+
+[url=https://postimg.cc/NK0zgTp0][img]https://i.postimg.cc/NK0zgTp0/Sentinel-2-with-Cloud-Filtering.png[/img][/url]
+
+[url=https://postimg.cc/LnDWKvk7][img]https://i.postimg.cc/LnDWKvk7/Time-Series-of-Precipitation.png[/img][/url]
