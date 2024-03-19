@@ -7,7 +7,7 @@ Calculates the Normalized Difference Vegetation Index (NDVI) for each cloud-free
 Generates NDVI time series for specific points of interest.  
 Imports TRMM precipitation data and calculates monthly precipitation for the area of interest.  
 Generates a precipitation time series.  
-Performs NDVI compositions for the dry and wet seasons. 
+Performs NDVI compositions for the dry and wet seasons.  
 Combine wet dataset images into a single ImageCollection, clip them to the area of interest.  
 
 ## Usage
