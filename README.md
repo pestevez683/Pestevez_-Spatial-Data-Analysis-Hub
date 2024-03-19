@@ -1,5 +1,15 @@
 # Sentinel-2 and TRMM Analysis
 This script utilizes Google Earth Engine to analyze seasonal changes in vegetation (NDVI) and precipitation using Sentinel-2 satellite imagery and TRMM precipitation data. It filters images by dates, removes clouds, calculates NDVI, and generates time series charts for different points of interest. Additionally, it creates compositions of NDVI for the dry and wet seasons, as well as RGB composite images for visualization.
+Broadly, the code performs the following actions:
+
+Filters a Sentinel-2 image collection for a specific area of interest and time period.
+Applies a cloud filter to the Sentinel-2 images to remove cloud-affected pixels.
+Calculates the Normalized Difference Vegetation Index (NDVI) for each cloud-free image.
+Generates NDVI time series for specific points of interest.
+Imports TRMM precipitation data and calculates monthly precipitation for the area of interest.
+Generates a precipitation time series.
+Performs NDVI compositions for the dry and wet seasons.
+Visualizes the composited images and time series on an interactive map.
 
 ## Usage
 1. Ensure you have access to Google Earth Engine and are authenticated.
